@@ -6,7 +6,7 @@ contains a class
 
 class Square:
     """
-        the class represents a square
+    the class represents a square
     """
     def __init__(self, size=0):
         try:
