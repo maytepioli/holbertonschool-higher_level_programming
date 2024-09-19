@@ -53,10 +53,11 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             perimeter = 0
         return perimeter
-    
+
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
         p = ""
-        for _i in range(self.height):
-            p += "#" * self.width
+        for _i in range(self.__height):
+            p += "#" * self.__width + '\n'
+        return p[:-1]
