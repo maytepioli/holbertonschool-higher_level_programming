@@ -69,7 +69,7 @@ class Rectangle:
         return f'Rectangle({self.__width}, {self.__height})'
 
     def __del__(self):
-        print("Bye rectangle...")
+        print("Bye rectangle..")
         Rectangle.number_of_instances -= 1
 
     def bigger_or_equal(rect_1, rect_2):
