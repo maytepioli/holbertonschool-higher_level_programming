@@ -59,7 +59,7 @@ class Rectangle:
         return perimeter
 
     def __str__(self):
-        if self.__width == 0 or self.__height == 0:
+        if self.__width <= 0 or self.__height <= 0:
             return ""
         p = ""
         p += ((str(self.print_symbol) * self.width + '\n') * self.height)
