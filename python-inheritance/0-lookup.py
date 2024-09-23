@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""
+Módulo que contiene la función lookup.
+
+La función lookup permite obtener los atributos y métodos disponibles
+de cualquier objeto en Python.
+"""
+
+
 def lookup(obj):
     """
     Devuelve una lista de atributos y métodos disponibles de un objeto.
