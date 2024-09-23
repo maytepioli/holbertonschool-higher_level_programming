@@ -66,7 +66,7 @@ class Rectangle:
         return p[:-1]
 
     def __repr__(self):
-        return f"Rectangle({self.__width}, {self.__height})"
+        return f'Rectangle({self.__width}, {self.__height})'
 
     def __del__(self):
         print("Bye rectangle...")
@@ -77,9 +77,7 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_2.area() == rect_2.area():
-            return rect_1
-        if rect_1.area() > rect_2.area():
+        if rect_2.area() == rect_2.area() or rect_1.area() > rect_2.area():
             return rect_1
         else:
             return rect_2
