@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Este archivo contiene una función para verificar la herencia de clases.
+"""
+
+
 def inherits_from(obj, a_class):
     """
     Verifica si un objeto es una instancia de una clase que hereda de a_class,
