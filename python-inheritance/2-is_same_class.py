@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Este archivo contiene un objeto
+"""
+
+
 def is_same_class(obj, a_class):
     """
     Verifica si un objeto es exactamente una
