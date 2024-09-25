@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+importamos la clase BaseGeometry desde el módulo 7-base_geometry.
+ BaseGeometry proporciona métodos para validar atributos en geometrías.
+"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -13,19 +17,6 @@ class Rectangle(BaseGeometry):
     __init__(width, height): Inicializa un nuevo objeto Rectangle.
         """
     def __init__(self, width, height):
-        """
-    Inicializa un objeto Rectangle.
-
-    Args:
-    width (int): Ancho del rectángulo.
-    height (int): Altura del rectángulo.
-
-    Lanza:
-    TypeError: Si no son enteros.
-    ValueError: Si son <= 0.
-
-    Valida los valores con `integer_validator` y los asigna.
-    """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
