@@ -1,27 +1,13 @@
 #!/usr/bin/python3
-class Fish:
-    def swim(self):
-        print("The fish is swimming")
-
-
-    def habitat(self):
-        print("The bird is flying")
-
-
-class Bird:
-    def fly(self):
-        print("The bird is flying")
-
-
-    def habitat(self):
-        print("The bird lives in the sky")
-
-class FlyingFish(Fish, Bird):
-    def fly(self):
-        print("The fish is swimmin")
-
-    def swim(self):
-        print("The flying fish is swimming!")
-
-    def habitat(self):
-        print("he flying fish lives both in water and the sky!")
+class CountedIterator:
+    def __init__(self, index):
+        self.index = iter(index)
+        self.counter = 0
+    
+    def get_count(self):
+        return self.counter
+    
+    def __next__(self):
+        value = next(self.index)
+        self.counter += 1
+        return value
