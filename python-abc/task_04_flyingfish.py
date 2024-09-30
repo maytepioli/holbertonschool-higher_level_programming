@@ -17,10 +17,10 @@ class Bird:
         print("The bird lives in the sky")
 
 class FlyingFish(Fish, Bird):
-    def fly(self):
-        print("The flying fish is swimmin!")
-
     def swim(self):
+        print("The flying fish is swimming!")
+
+    def fly(self):
         print("The flying fish is soaring!")
 
     def habitat(self):
