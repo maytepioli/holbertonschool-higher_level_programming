@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-import json
 """
-# Función que convierte un objeto a su representación en formato JSON
+Importa el módulo 'json' para trabajar con datos en formato JSON.
+"""
+import json
+
+"""
+    Función que convierte un objeto a su representación en formato JSON
 """
 
 
