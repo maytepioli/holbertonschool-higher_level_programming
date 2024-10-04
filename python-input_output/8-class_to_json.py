@@ -17,5 +17,5 @@ def class_to_json(obj):
     """
 
     dic = {}
-    dic = obj
+    dic = obj.__dict__
     return dic
