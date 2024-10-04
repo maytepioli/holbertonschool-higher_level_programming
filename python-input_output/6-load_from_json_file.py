@@ -8,7 +8,11 @@ import json
 funcion que crea un objeto a partir de un archivo JSON
 """
 
+
 def load_from_json_file(filename):
+    """
+    Esta funcion crea un objeto a partir de un archivo JSON
+    """
     with open(filename, 'r') as file:
         obj = json.load(file)
         return obj
