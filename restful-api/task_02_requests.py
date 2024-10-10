@@ -4,6 +4,7 @@ import csv
 def fetch_and_print_posts():
     url = 'https://jsonplaceholder.typicode.com/posts'
     answer = requests.get(url)
+    print(f'Status Code: {answer.status_code}')
 
     if answer.status_code == 200:
         posts = answer.json()
