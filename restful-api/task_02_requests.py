@@ -8,7 +8,7 @@ def fetch_and_print_posts():
     if answer.status_code == 200:
         posts = answer.json()
         for i in posts:
-            print(f'{i["title"]}')
+            print(i["title"])
 
 def fetch_and_save_posts():
     list_dic = []
