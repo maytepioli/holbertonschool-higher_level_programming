@@ -40,7 +40,7 @@ class MyHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header('Content-Type','text/plain')
             self.end_headers()
-            self.wfile.write(b"404 Not Found: The requested resource does not exist.")
+            self.wfile.write(b"404 Not Found")
 
 with http.server.HTTPServer(("", PORT), MyHandler) as httpd:
     print("serving at port", PORT)
