@@ -26,7 +26,7 @@ def users(username):
     else:
         return jsonify({"error": "users no fund"}), 404
 
-@app.route('/add_user', methods=["POST"])
+@app.route("/add_user", methods=["POST"])
 def add_data():
     data_user = request.get_json()
     username = data_user.get('username')
@@ -44,7 +44,7 @@ def add_data():
         'city': city
     }
 
-    return jsonify({"message": "User added","user": usuario[username]}), 201
+    return jsonify({"message": "User added", "user": usuario[username]}), 201
 
 if __name__ == "__main__":
     app.run(debug=True)
